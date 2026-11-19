@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 2</title>
+</head>
+<body>
+
+<h1>Formulario de Nombres</h1>
+
+<form method="POST">
+
+    <p>Nombre 1:</p>
+    <input type="text" name="nombre1" required>
+
+    <p>Nombre 2:</p>
+    <input type="text" name="nombre2" required>
+
+    <p>Nombre 3:</p>
+    <input type="text" name="nombre3" required>
+
+    <br><br>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+{% if nombre_largo %}
+<p>El nombre con mayor cantidad de caracteres es: {{ nombre_largo }}</p>
+<p>El nombre tiene: {{ cantidad }} caracteres</p>
+{% endif %}
+
+<br>
+
+<a href="/">Volver al menú</a>
+
+</body>
+</html>
